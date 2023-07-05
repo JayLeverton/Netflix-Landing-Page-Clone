@@ -1,0 +1,551 @@
+/* Custom Netflix Font ------------------------------------- */
+@font-face {
+    font-family: "NetflixSans-Light";
+    src: url("fonts/NetflixSans-Light.otf");
+    src: url("fonts/NetflixSans-Light.woff2");
+}
+
+@font-face {
+    font-family: "NetflixSans-Regular";
+    src: url("fonts/NetflixSans-Regular.otf");
+    src: url("fonts/NetflixSans-Regular.woff2");
+}
+
+@font-face {
+    font-family: "NetflixSans-Bold";
+    src: url("fonts/NetflixSans-Bold.otf");
+    src: url("fonts/NetflixSans-Bold.otf");
+}
+
+@font-face {
+    font-family: "NetflixSans-Medium";
+    src: url("fonts/NetflixSans-Medium.otf");
+    src: url("fonts/NetflixSans-Medium.woff2");
+}
+
+/* Style Resets -------------------------------------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    /* text-rendering: optimizeSpeed; */
+    line-height: 1.5;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ------------------------------------------- */
+
+
+
+
+:root {
+    --netflix-red: #E50914;
+    --faq-grey: #313131;
+    --faq-grey-focus: #555555;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+    font-family: 'NetflixSans-Regular', sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    color: white;
+}
+
+* {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* display: flex; */
+    background-color: black;
+}
+
+#netflix-hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),
+        url('img/netflix-hero-img-2.jpg');
+    background-size: cover;
+    padding-bottom: 2.75rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem 0rem 1rem;
+    align-items: center;
+    margin-bottom: 4.6rem;
+}
+
+#netflix-logo-container {
+    width: 8.5rem;
+}
+
+.btn {
+    display: block;
+    height: 2.5rem;
+    width: 6rem;
+    border-radius: 0.3rem;
+    border: 0px;
+    background-color: var(--netflix-red);
+    color: white;
+    font-family: 'NetflixSans-Regular';
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+}
+
+#hero-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    /* width: 90%; */
+}
+
+h1 {
+    font-family: 'NetflixSans-Medium';
+    font-size: 2.35rem;
+    letter-spacing: 0.1rem;
+    line-height: 3.15rem;
+}
+
+h2 {
+    font-family: 'NetflixSans-Bold';
+    font-size: 2.6rem;
+    font-weight: 900;
+    letter-spacing: 0.02rem;
+    line-height: 3.25rem;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'NetflixSans-Regular';
+    font-size: 1.45rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-family: 'NetflixSans-Regular';
+    font-size: 1.45rem;
+}
+
+p {
+    font-family: 'NetflixSans-Light';
+    font-size: 1.45rem;
+}
+
+#hero-h1 {
+    margin-bottom: 1.6rem;
+}
+
+.cta {
+    margin: auto;
+    width: 89%;
+    margin-top: 1.7rem;
+}
+
+.cta-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-input {
+    margin-top: 1.25rem;
+    padding: 1rem;
+    font-family: "NetflixSans-Light";
+    font-size: 1.3rem;
+    color: hsla(0, 0%, 100%, 0.486);
+    font-weight: 500;
+    height: 3.75rem;
+    background-color: hsl(220, 24%, 17%);
+    color: white;
+    border: 1px solid hsla(0, 0%, 100%, 0.45);
+    border-radius: 0.25rem;
+    margin-bottom: 1.3rem;
+}
+
+.email-input::placeholder {
+    color: rgb(211, 210, 210);
+    font-family: "NetflixSans-Light";
+    font-weight: 100;
+}
+
+.email-input-after-clicked {
+    border-color: rgb(52, 199, 64);
+}
+
+.email-input-after-typed {
+    background-color: hsl(0, 0%, 9%);
+}
+
+.btn-get-started {
+    display: flex;
+    height: 3.85rem;
+    width: 12.5rem;
+    margin: auto;
+    border-radius: 0.3rem;
+    border: 0px;
+    background-color: var(--netflix-red);
+    color: white;
+    font-family: 'NetflixSans-Regular';
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem;
+    /* justify-content: center; */
+}
+
+.btn-get-started p {
+    display: flex;
+    margin: auto;
+    margin-right: 0;
+}
+
+.right-chevron {
+    display: flex;
+    margin: auto;
+    margin-left: 0;
+}
+
+.popcorn-card {
+    background: radial-gradient(at 50% -5%, #ff0030 -5%, #1d2c6d 69%);
+    display: flex;
+    align-items: left;
+    width: 87%;
+    height: 50%;
+    margin: 0 auto;
+    border-radius: 0.38rem;
+    margin-top: 1.25rem;
+    padding-left: 2.30rem;
+}
+
+.popcorn-svg-container {
+    /* display: flex; */
+    scale: 80%;
+    margin-left: -45px;
+    margin-top: -48px;
+    margin-bottom: 5px;
+}
+
+.popcorn-svg {
+    display: flex;
+}
+
+.popcorn-card-body {
+    text-align: left;
+    width: 90%;
+}
+
+.card-title {
+    font-size: 1.45rem;
+    letter-spacing: 0.1rem;
+}
+
+.card-text {
+    font-family: 'NetflixSans-Light';
+    font-size: 1.25rem;
+    font-weight: 100;
+    margin-top: 0.75rem;
+}
+
+.popcorn-card-learn-more {
+    display: flex;
+    flex-direction: row;
+    color: #3b96ff;
+    font-family: 'NetflixSans-Light';
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 0.75rem;
+    margin-bottom: 2.5rem;
+}
+
+.popcorn-card-learn-more svg {
+    margin-left: 0.5rem;
+}
+
+.feature-container {
+    padding-top: 4rem;
+    padding-bottom: 4.9rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.feature-container::first-line {
+    padding-top: 15rem;
+}
+
+.feature-container p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.9rem;
+}
+
+.feature-img-container {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+#tv-show-previews-video-container {
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    position: absolute;
+    top: 20%;
+    left: 12.5%;
+}
+
+video {
+    display: inline-block;
+    vertical-align: baseline;
+    width: 100%;
+}
+
+.separator {
+    height: 8px;
+    background-color: rgb(39, 39, 39);
+    margin: 0;
+    padding: 0;
+}
+
+#tv-show-previews-video-container-2 {
+    z-index: -1;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    max-width: 63%;
+    max-height: 47%;
+    position: absolute;
+    top: 10%;
+    left: 17%;
+}
+
+.downloading-card {
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+    border: 2px solid rgb(80, 80, 80);
+    border-radius: 1rem;
+    padding: 0.35rem 0rem 0.5rem 0.8rem;
+    width: 21.5rem;
+    /* max-width: 500px; */
+    margin: 0 auto;
+    margin-top: -6.465rem;
+    z-index: 9;
+    background-color: black;
+}
+
+.downloading-card img {
+    width: 2.8rem;
+}
+
+.downloading-card-text {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    margin-left: 1.3rem;
+    z-index: 10;
+    justify-content: left;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.downloading-text-title {
+    font-family: 'NetflixSans-Light';
+    font-weight: 600;
+    font-size: 1.06rem;
+    letter-spacing: 0.05rem;
+}
+
+.downloading-text-downloading {
+    font-family: 'NetflixSans-Regular';
+    font-weight: 100;
+    font-size: 0.93rem;
+    color: #147aff;
+}
+
+.faq {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.faq-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-card:not(:first-of-type) {
+    margin-top: 0.9rem;
+}
+
+.faq-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--faq-grey);
+    padding: 1.9rem 2rem 1.9rem 2rem;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+
+.faq-button:focus {
+    background-color: var(--faq-grey-focus);
+}
+
+.faq-body-container {
+    background-color: var(--faq-grey);
+    padding: 0 2rem 0 2rem;
+    margin: 0;
+    height: 100%;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.faq-body-container-opened {
+    max-height: 9999px;
+    overflow: auto;
+    padding: 2rem 2rem 2rem 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.faq-button span, .faq-body-container p {
+    font-family: 'NetflixSans-Light';
+    font-size: 1.35rem;
+    font-weight: 100;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.faq-span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+
+.plus-svg {
+    align-self: center;
+    height: 16px;
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.questions-number, .questions-number a, .footer-links a {
+    font-family: "NetflixSans-Light";
+    font-size: 1.25rem;
+    color: rgb(202, 202, 202);
+}
+
+.questions-number {
+    margin-bottom: 2rem;
+}
+
+footer {
+    margin: 2rem 2rem 2rem 2rem;
+}
+
+.footer-links a {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.15rem;
+    color: rgb(201, 201, 201);
+    margin-bottom: 1rem;
+}
+
+.language-select-container {
+    display: flex;
+    /* position: relative; */
+    min-width: auto;
+    width: 100%;
+    margin: auto auto;
+    justify-content: left;
+    align-items: center;
+}
+
+.globe-svg-container {
+    position: absolute;
+    display: flex;
+    padding-left: 1rem;
+    pointer-events: none;
+}
+
+.language-select {
+    width: 10rem;
+    border: 1px solid rgb(129, 129, 129);
+    border-radius: 0.25rem;
+    margin: 1rem 0 1rem 0;
+    background-color: #131313;
+    color: white;
+    font-family: "NetflixSans-Regular";
+    font-size: 1.25rem;
+    font-weight: 100;
+    padding: 0.5rem 0rem 0.5rem 2.85rem;
+    appearance: none;
+}
+
+.dropdown-arrow-svg-container {
+    position: absolute;
+    display: flex;
+    padding-left: 7.75rem;
+    pointer-events: none;
+}
+
+.footer-region {
+    display: flex;
+    font-size: 1.15rem;
+    color: rgb(201, 201, 201);
+    padding: 1rem 0 1rem 0;
+}
+
+
+
+
+/* 3x separate media queries + the default mobile layout */
